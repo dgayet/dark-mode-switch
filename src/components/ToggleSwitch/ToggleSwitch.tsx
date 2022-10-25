@@ -15,6 +15,7 @@ class ToggleSwitch extends Component<{selected: boolean,
         return (
             <div className={`toggleContainer ${selected? "enabled" : ""}`} onClick={toggleSelected}>
                 <div className={`dialogButton ${selected? "" : "disabled"}`}></div>
+                <span className={`modeIcon${selected? 'Enabled' : 'Disabled'}`}>{selected? '🌜' : '🌞'}</span>
             </div>
         )
     }

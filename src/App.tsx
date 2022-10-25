@@ -20,10 +20,10 @@ function App() {
       <div className="darkModeContainer">
         <span className="darkModeSpan">Dark/Light mode: </span>
         <ToggleSwitch selected={selected}
-          toggleSelected={()=> {
-          switchTheme();
-          }}/>
-        </div>
+                      toggleSelected={()=> {
+                        switchTheme();
+        }}/>
+      </div>
       <Square />
     </div>
   );
